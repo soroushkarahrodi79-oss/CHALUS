@@ -1,0 +1,946 @@
+{
+  "south-chalus": {
+    "jan_base": {
+      "classes": {
+        "trunk": 326,
+        "primary": 4982,
+        "motorway": 300,
+        "motorway_link": 19
+      },
+      "top_refs": [
+        [
+          "59",
+          5256
+        ],
+        [
+          "3",
+          300
+        ],
+        [
+          "22",
+          11
+        ]
+      ],
+      "min_edge_km": 0.0009,
+      "max_edge_km": 2.0513,
+      "off_major_classes_present": [],
+      "edge_count": 5627
+    },
+    "jan_closure": {
+      "classes": {
+        "trunk": 3697,
+        "motorway": 268,
+        "trunk_link": 111,
+        "motorway_link": 12,
+        "primary_link": 17,
+        "primary": 958,
+        "secondary": 186
+      },
+      "top_refs": [
+        [
+          "77",
+          2612
+        ],
+        [
+          "14",
+          515
+        ],
+        [
+          "22",
+          495
+        ],
+        [
+          "5",
+          109
+        ],
+        [
+          "54",
+          44
+        ]
+      ],
+      "min_edge_km": 0.0004,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 5249
+    },
+    "jun_base": {
+      "classes": {
+        "trunk": 361,
+        "primary": 4926,
+        "motorway": 300,
+        "motorway_link": 19
+      },
+      "top_refs": [
+        [
+          "59",
+          5235
+        ],
+        [
+          "3",
+          300
+        ],
+        [
+          "22",
+          11
+        ]
+      ],
+      "min_edge_km": 0.0009,
+      "max_edge_km": 2.0513,
+      "off_major_classes_present": [],
+      "edge_count": 5606
+    },
+    "jun_closure": {
+      "classes": {
+        "trunk": 3646,
+        "motorway": 269,
+        "trunk_link": 115,
+        "motorway_link": 12,
+        "primary": 1087,
+        "primary_link": 21,
+        "secondary": 186
+      },
+      "top_refs": [
+        [
+          "77",
+          2693
+        ],
+        [
+          "14",
+          512
+        ],
+        [
+          "22",
+          497
+        ],
+        [
+          "5",
+          109
+        ],
+        [
+          "54",
+          44
+        ]
+      ],
+      "min_edge_km": 0.0004,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 5336
+    },
+    "jan_closure_equals_base": false,
+    "jun_closure_equals_base": false
+  },
+  "south-nowshahr": {
+    "jan_base": {
+      "classes": {
+        "trunk": 326,
+        "primary": 5152,
+        "motorway": 300,
+        "motorway_link": 19
+      },
+      "top_refs": [
+        [
+          "59",
+          5256
+        ],
+        [
+          "3",
+          300
+        ],
+        [
+          "22",
+          11
+        ]
+      ],
+      "min_edge_km": 0.0009,
+      "max_edge_km": 2.0513,
+      "off_major_classes_present": [],
+      "edge_count": 5797
+    },
+    "jan_closure": {
+      "classes": {
+        "trunk": 3697,
+        "motorway": 268,
+        "trunk_link": 111,
+        "motorway_link": 12,
+        "primary_link": 17,
+        "primary": 841,
+        "secondary": 188
+      },
+      "top_refs": [
+        [
+          "77",
+          2612
+        ],
+        [
+          "14",
+          515
+        ],
+        [
+          "22",
+          495
+        ],
+        [
+          "5",
+          109
+        ],
+        [
+          "54",
+          44
+        ]
+      ],
+      "min_edge_km": 0.0004,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 5134
+    },
+    "jun_base": {
+      "classes": {
+        "trunk": 361,
+        "primary": 5099,
+        "motorway": 300,
+        "motorway_link": 19
+      },
+      "top_refs": [
+        [
+          "59",
+          5235
+        ],
+        [
+          "3",
+          300
+        ],
+        [
+          "22",
+          11
+        ]
+      ],
+      "min_edge_km": 0.0009,
+      "max_edge_km": 2.0513,
+      "off_major_classes_present": [],
+      "edge_count": 5779
+    },
+    "jun_closure": {
+      "classes": {
+        "trunk": 3646,
+        "motorway": 269,
+        "trunk_link": 115,
+        "motorway_link": 12,
+        "primary": 967,
+        "primary_link": 21,
+        "secondary": 188
+      },
+      "top_refs": [
+        [
+          "77",
+          2693
+        ],
+        [
+          "14",
+          512
+        ],
+        [
+          "22",
+          497
+        ],
+        [
+          "5",
+          109
+        ],
+        [
+          "54",
+          44
+        ]
+      ],
+      "min_edge_km": 0.0004,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 5218
+    },
+    "jan_closure_equals_base": false,
+    "jun_closure_equals_base": false
+  },
+  "south-kelardasht": {
+    "jan_base": {
+      "classes": {
+        "trunk": 143,
+        "primary": 4943,
+        "secondary": 712
+      },
+      "top_refs": [
+        [
+          "59",
+          5084
+        ]
+      ],
+      "min_edge_km": 0.0009,
+      "max_edge_km": 2.0513,
+      "off_major_classes_present": [],
+      "edge_count": 5798
+    },
+    "jan_closure": {
+      "classes": {
+        "trunk": 4062,
+        "motorway": 268,
+        "trunk_link": 136,
+        "motorway_link": 12,
+        "primary_link": 17,
+        "primary": 1172,
+        "secondary": 898
+      },
+      "top_refs": [
+        [
+          "77",
+          2612
+        ],
+        [
+          "22",
+          686
+        ],
+        [
+          "59",
+          658
+        ],
+        [
+          "14",
+          515
+        ],
+        [
+          "5",
+          109
+        ]
+      ],
+      "min_edge_km": 0.0004,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 6565
+    },
+    "jun_base": {
+      "classes": {
+        "trunk": 178,
+        "primary": 4886,
+        "secondary": 713
+      },
+      "top_refs": [
+        [
+          "59",
+          5063
+        ]
+      ],
+      "min_edge_km": 0.0009,
+      "max_edge_km": 2.0513,
+      "off_major_classes_present": [],
+      "edge_count": 5777
+    },
+    "jun_closure": {
+      "classes": {
+        "trunk": 4011,
+        "motorway": 269,
+        "trunk_link": 140,
+        "motorway_link": 12,
+        "primary": 1297,
+        "primary_link": 21,
+        "secondary": 899
+      },
+      "top_refs": [
+        [
+          "77",
+          2693
+        ],
+        [
+          "22",
+          688
+        ],
+        [
+          "59",
+          658
+        ],
+        [
+          "14",
+          512
+        ],
+        [
+          "5",
+          109
+        ]
+      ],
+      "min_edge_km": 0.0004,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 6649
+    },
+    "jan_closure_equals_base": false,
+    "jun_closure_equals_base": false
+  },
+  "east-chalus": {
+    "jan_base": {
+      "classes": {
+        "primary": 359,
+        "trunk": 1195,
+        "secondary": 58,
+        "secondary_link": 3,
+        "primary_link": 1,
+        "trunk_link": 10
+      },
+      "top_refs": [
+        [
+          "22",
+          1143
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 1626
+    },
+    "jan_closure": {
+      "classes": {
+        "primary": 359,
+        "trunk": 1195,
+        "secondary": 58,
+        "secondary_link": 3,
+        "primary_link": 1,
+        "trunk_link": 10
+      },
+      "top_refs": [
+        [
+          "22",
+          1143
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 1626
+    },
+    "jun_base": {
+      "classes": {
+        "primary": 404,
+        "secondary": 59,
+        "secondary_link": 3,
+        "trunk": 1160,
+        "primary_link": 1,
+        "trunk_link": 10
+      },
+      "top_refs": [
+        [
+          "22",
+          1148
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 1637
+    },
+    "jun_closure": {
+      "classes": {
+        "primary": 404,
+        "secondary": 59,
+        "secondary_link": 3,
+        "trunk": 1160,
+        "primary_link": 1,
+        "trunk_link": 10
+      },
+      "top_refs": [
+        [
+          "22",
+          1148
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 1637
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "east-nowshahr": {
+    "jan_base": {
+      "classes": {
+        "primary": 242,
+        "trunk": 1195,
+        "secondary": 60,
+        "secondary_link": 3,
+        "primary_link": 1,
+        "trunk_link": 10
+      },
+      "top_refs": [
+        [
+          "22",
+          1143
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 1511
+    },
+    "jan_closure": {
+      "classes": {
+        "primary": 242,
+        "trunk": 1195,
+        "secondary": 60,
+        "secondary_link": 3,
+        "primary_link": 1,
+        "trunk_link": 10
+      },
+      "top_refs": [
+        [
+          "22",
+          1143
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 1511
+    },
+    "jun_base": {
+      "classes": {
+        "primary": 284,
+        "secondary": 61,
+        "secondary_link": 3,
+        "trunk": 1160,
+        "primary_link": 1,
+        "trunk_link": 10
+      },
+      "top_refs": [
+        [
+          "22",
+          1148
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 1519
+    },
+    "jun_closure": {
+      "classes": {
+        "primary": 284,
+        "secondary": 61,
+        "secondary_link": 3,
+        "trunk": 1160,
+        "primary_link": 1,
+        "trunk_link": 10
+      },
+      "top_refs": [
+        [
+          "22",
+          1148
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 1519
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "east-kelardasht": {
+    "jan_base": {
+      "classes": {
+        "primary": 573,
+        "trunk": 1560,
+        "secondary": 770,
+        "secondary_link": 3,
+        "primary_link": 1,
+        "trunk_link": 35
+      },
+      "top_refs": [
+        [
+          "22",
+          1334
+        ],
+        [
+          "59",
+          655
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 2942
+    },
+    "jan_closure": {
+      "classes": {
+        "primary": 573,
+        "trunk": 1560,
+        "secondary": 770,
+        "secondary_link": 3,
+        "primary_link": 1,
+        "trunk_link": 35
+      },
+      "top_refs": [
+        [
+          "22",
+          1334
+        ],
+        [
+          "59",
+          655
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 2942
+    },
+    "jun_base": {
+      "classes": {
+        "primary": 614,
+        "secondary": 772,
+        "secondary_link": 3,
+        "trunk": 1525,
+        "primary_link": 1,
+        "trunk_link": 35
+      },
+      "top_refs": [
+        [
+          "22",
+          1339
+        ],
+        [
+          "59",
+          655
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 2950
+    },
+    "jun_closure": {
+      "classes": {
+        "primary": 614,
+        "secondary": 772,
+        "secondary_link": 3,
+        "trunk": 1525,
+        "primary_link": 1,
+        "trunk_link": 35
+      },
+      "top_refs": [
+        [
+          "22",
+          1339
+        ],
+        [
+          "59",
+          655
+        ],
+        [
+          "18",
+          25
+        ],
+        [
+          "22;18",
+          6
+        ]
+      ],
+      "min_edge_km": 0.0001,
+      "max_edge_km": 0.9031,
+      "off_major_classes_present": [],
+      "edge_count": 2950
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "west-chalus": {
+    "jan_base": {
+      "classes": {
+        "trunk": 1223,
+        "primary": 347
+      },
+      "top_refs": [
+        [
+          "22",
+          1250
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 1570
+    },
+    "jan_closure": {
+      "classes": {
+        "trunk": 1223,
+        "primary": 347
+      },
+      "top_refs": [
+        [
+          "22",
+          1250
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 1570
+    },
+    "jun_base": {
+      "classes": {
+        "trunk": 1233,
+        "primary": 351
+      },
+      "top_refs": [
+        [
+          "22",
+          1252
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 1584
+    },
+    "jun_closure": {
+      "classes": {
+        "trunk": 1233,
+        "primary": 351
+      },
+      "top_refs": [
+        [
+          "22",
+          1252
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 1584
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "west-nowshahr": {
+    "jan_base": {
+      "classes": {
+        "trunk": 1223,
+        "primary": 539
+      },
+      "top_refs": [
+        [
+          "22",
+          1250
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 1762
+    },
+    "jan_closure": {
+      "classes": {
+        "trunk": 1223,
+        "primary": 539
+      },
+      "top_refs": [
+        [
+          "22",
+          1250
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 1762
+    },
+    "jun_base": {
+      "classes": {
+        "trunk": 1233,
+        "primary": 546
+      },
+      "top_refs": [
+        [
+          "22",
+          1252
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 1779
+    },
+    "jun_closure": {
+      "classes": {
+        "trunk": 1233,
+        "primary": 546
+      },
+      "top_refs": [
+        [
+          "22",
+          1252
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 1779
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "west-kelardasht": {
+    "jan_base": {
+      "classes": {
+        "trunk": 686,
+        "primary": 261,
+        "secondary": 1222
+      },
+      "top_refs": [
+        [
+          "22",
+          678
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 2169
+    },
+    "jan_closure": {
+      "classes": {
+        "trunk": 686,
+        "primary": 261,
+        "secondary": 1222
+      },
+      "top_refs": [
+        [
+          "22",
+          678
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 2169
+    },
+    "jun_base": {
+      "classes": {
+        "trunk": 694,
+        "primary": 265,
+        "secondary": 1222
+      },
+      "top_refs": [
+        [
+          "22",
+          678
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 2181
+    },
+    "jun_closure": {
+      "classes": {
+        "trunk": 694,
+        "primary": 265,
+        "secondary": 1222
+      },
+      "top_refs": [
+        [
+          "22",
+          678
+        ]
+      ],
+      "min_edge_km": 0.0007,
+      "max_edge_km": 0.388,
+      "off_major_classes_present": [],
+      "edge_count": 2181
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  }
+}

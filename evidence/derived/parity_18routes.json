@@ -1,0 +1,349 @@
+{
+  "south-chalus": {
+    "base": {
+      "jan_km": 151.239,
+      "jun_km": 151.229,
+      "jan_edges": 5627,
+      "jun_edges": 5606,
+      "jan_ways": 267,
+      "jun_ways": 265,
+      "shared_ways": 265,
+      "jan_only": [
+        664585317,
+        1106503266
+      ],
+      "jun_only": [],
+      "jan_dominant_ref": "59",
+      "jun_dominant_ref": "59"
+    },
+    "closure": {
+      "jan_km": 316.961,
+      "jun_km": 316.925,
+      "jan_edges": 5249,
+      "jun_edges": 5336,
+      "jan_ways": 395,
+      "jun_ways": 405,
+      "shared_ways": 393,
+      "jan_only": [
+        924025918,
+        924025921
+      ],
+      "jun_only": [
+        1251522092,
+        1251522093,
+        1254832046,
+        1254832048,
+        1265741351,
+        1270177767,
+        1270177768,
+        1270177770,
+        1270179067,
+        1280188385,
+        1287287400,
+        1287287401
+      ],
+      "jan_dominant_ref": "77",
+      "jun_dominant_ref": "77"
+    },
+    "jan_closure_equals_base": false,
+    "jun_closure_equals_base": false
+  },
+  "south-nowshahr": {
+    "base": {
+      "jan_km": 158.724,
+      "jun_km": 158.714,
+      "jan_edges": 5797,
+      "jun_edges": 5779,
+      "jan_ways": 281,
+      "jun_ways": 279,
+      "shared_ways": 279,
+      "jan_only": [
+        664585317,
+        1106503266
+      ],
+      "jun_only": [],
+      "jan_dominant_ref": "59",
+      "jun_dominant_ref": "59"
+    },
+    "closure": {
+      "jan_km": 311.029,
+      "jun_km": 310.994,
+      "jan_edges": 5134,
+      "jun_edges": 5218,
+      "jan_ways": 389,
+      "jun_ways": 399,
+      "shared_ways": 387,
+      "jan_only": [
+        924025918,
+        924025921
+      ],
+      "jun_only": [
+        1251522092,
+        1251522093,
+        1254832046,
+        1254832048,
+        1265741351,
+        1270177767,
+        1270177768,
+        1270177770,
+        1270179067,
+        1280188385,
+        1287287400,
+        1287287401
+      ],
+      "jan_dominant_ref": "77",
+      "jun_dominant_ref": "77"
+    },
+    "jan_closure_equals_base": false,
+    "jun_closure_equals_base": false
+  },
+  "south-kelardasht": {
+    "base": {
+      "jan_km": 145.681,
+      "jun_km": 145.671,
+      "jan_edges": 5798,
+      "jun_edges": 5777,
+      "jan_ways": 262,
+      "jun_ways": 260,
+      "shared_ways": 260,
+      "jan_only": [
+        664585317,
+        1106503266
+      ],
+      "jun_only": [],
+      "jan_dominant_ref": "59",
+      "jun_dominant_ref": "59"
+    },
+    "closure": {
+      "jan_km": 364.321,
+      "jun_km": 364.286,
+      "jan_edges": 6565,
+      "jun_edges": 6649,
+      "jan_ways": 473,
+      "jun_ways": 483,
+      "shared_ways": 471,
+      "jan_only": [
+        924025918,
+        924025921
+      ],
+      "jun_only": [
+        1251522092,
+        1251522093,
+        1254832046,
+        1254832048,
+        1265741351,
+        1270177767,
+        1270177768,
+        1270177770,
+        1270179067,
+        1280188385,
+        1287287400,
+        1287287401
+      ],
+      "jan_dominant_ref": "77",
+      "jun_dominant_ref": "77"
+    },
+    "jan_closure_equals_base": false,
+    "jun_closure_equals_base": false
+  },
+  "east-chalus": {
+    "base": {
+      "jan_km": 99.571,
+      "jun_km": 99.568,
+      "jan_edges": 1626,
+      "jun_edges": 1637,
+      "jan_ways": 112,
+      "jun_ways": 112,
+      "shared_ways": 112,
+      "jan_only": [],
+      "jun_only": [],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "closure": {
+      "jan_km": 99.571,
+      "jun_km": 99.568,
+      "jan_edges": 1626,
+      "jun_edges": 1637,
+      "jan_ways": 112,
+      "jun_ways": 112,
+      "shared_ways": 112,
+      "jan_only": [],
+      "jun_only": [],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "east-nowshahr": {
+    "base": {
+      "jan_km": 93.639,
+      "jun_km": 93.637,
+      "jan_edges": 1511,
+      "jun_edges": 1519,
+      "jan_ways": 106,
+      "jun_ways": 106,
+      "shared_ways": 106,
+      "jan_only": [],
+      "jun_only": [],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "closure": {
+      "jan_km": 93.639,
+      "jun_km": 93.637,
+      "jan_edges": 1511,
+      "jun_edges": 1519,
+      "jan_ways": 106,
+      "jun_ways": 106,
+      "shared_ways": 106,
+      "jan_only": [],
+      "jun_only": [],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "east-kelardasht": {
+    "base": {
+      "jan_km": 146.931,
+      "jun_km": 146.928,
+      "jan_edges": 2942,
+      "jun_edges": 2950,
+      "jan_ways": 190,
+      "jun_ways": 190,
+      "shared_ways": 190,
+      "jan_only": [],
+      "jun_only": [],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "closure": {
+      "jan_km": 146.931,
+      "jun_km": 146.928,
+      "jan_edges": 2942,
+      "jun_edges": 2950,
+      "jan_ways": 190,
+      "jun_ways": 190,
+      "shared_ways": 190,
+      "jan_only": [],
+      "jun_only": [],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "west-chalus": {
+    "base": {
+      "jan_km": 79.402,
+      "jun_km": 79.406,
+      "jan_edges": 1570,
+      "jun_edges": 1584,
+      "jan_ways": 117,
+      "jun_ways": 119,
+      "shared_ways": 117,
+      "jan_only": [],
+      "jun_only": [
+        1252235733,
+        1252235734
+      ],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "closure": {
+      "jan_km": 79.402,
+      "jun_km": 79.406,
+      "jan_edges": 1570,
+      "jun_edges": 1584,
+      "jan_ways": 117,
+      "jun_ways": 119,
+      "shared_ways": 117,
+      "jan_only": [],
+      "jun_only": [
+        1252235733,
+        1252235734
+      ],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "west-nowshahr": {
+    "base": {
+      "jan_km": 87.036,
+      "jun_km": 87.04,
+      "jan_edges": 1762,
+      "jun_edges": 1779,
+      "jan_ways": 131,
+      "jun_ways": 133,
+      "shared_ways": 131,
+      "jan_only": [],
+      "jun_only": [
+        1252235733,
+        1252235734
+      ],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "closure": {
+      "jan_km": 87.036,
+      "jun_km": 87.04,
+      "jan_edges": 1762,
+      "jun_edges": 1779,
+      "jan_ways": 131,
+      "jun_ways": 133,
+      "shared_ways": 131,
+      "jan_only": [],
+      "jun_only": [
+        1252235733,
+        1252235734
+      ],
+      "jan_dominant_ref": "22",
+      "jun_dominant_ref": "22"
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  },
+  "west-kelardasht": {
+    "base": {
+      "jan_km": 84.202,
+      "jun_km": 84.206,
+      "jan_edges": 2169,
+      "jun_edges": 2181,
+      "jan_ways": 113,
+      "jun_ways": 116,
+      "shared_ways": 113,
+      "jan_only": [],
+      "jun_only": [
+        1252235733,
+        1252235734,
+        1286993797
+      ],
+      "jan_dominant_ref": null,
+      "jun_dominant_ref": null
+    },
+    "closure": {
+      "jan_km": 84.202,
+      "jun_km": 84.206,
+      "jan_edges": 2169,
+      "jun_edges": 2181,
+      "jan_ways": 113,
+      "jun_ways": 116,
+      "shared_ways": 113,
+      "jan_only": [],
+      "jun_only": [
+        1252235733,
+        1252235734,
+        1286993797
+      ],
+      "jan_dominant_ref": null,
+      "jun_dominant_ref": null
+    },
+    "jan_closure_equals_base": true,
+    "jun_closure_equals_base": true
+  }
+}

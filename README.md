@@ -5,13 +5,26 @@ Tourism Access Disruption Pilot**.
 
 ## Current status
 
-**Gate 2A-R — paired retrospective historical reconstruction**
+**GATE 2A-R CLOSED — NO-GO. EO BLOCKED. GATE 2B UNAUTHORIZED.**
+
+Gate 2A-R found extremely stable modelled distances and corridors between
+the recovered January reference and the route-bounded June
+reconstruction (maximum 0.011% difference across all nine
+gateway-destination pairs). However, the pre-registered
+historical-verification standard was not met: Haraz segment
+correspondence remains incompletely demonstrated, June turn-restriction
+completeness is partial, and decisive motorway operational status lacks
+independent confirmation. Because the protocol required NO-GO for
+unresolved Haraz topology or restriction ambiguity, the study stops
+before EO processing. See
+[the final closeout report](docs/GATE2AR_FINAL_REPORT.md).
 
 The original Gate 1 numerical outputs and their exact January source were not
 preserved. This repository therefore does **not** claim to reproduce or recover
-Gate 1. Gate 2A-R tests whether the substantive network conclusion remains
+Gate 1. Gate 2A-R tested whether the substantive network conclusion remains
 stable when January and June 2024 networks are reconstructed through one
-frozen, reproducible procedure.
+frozen, reproducible procedure — it does, numerically, but that numeric
+stability was not sufficient on its own to close the gate.
 
 ## Frozen analytical system
 
@@ -39,9 +52,11 @@ See the [Gate 2A-R protocol amendment](docs/GATE2AR_PROTOCOL_AMENDMENT.md).
 
 ## Evidence status
 
-Existing candidate outputs remain diagnostic. Accepted results require
-verified historical provenance, a frozen environment, paired execution through
-one code path, deterministic reruns, manual route QA and the pre-registered
-connectivity, corridor and 2% stability tests.
+Gate 2A-R closed with a NO-GO verdict (see status above). Existing
+candidate outputs and computed distances are preserved as supported
+findings, not deleted, but the pre-registered historical-verification
+standard (Haraz segment correspondence, restriction completeness,
+independent motorway operational status) was not fully met.
 
-Earth-observation processing remains unauthorized until Gate 2A-R passes.
+Earth-observation processing remains unauthorized. Gate 2B remains
+unauthorized. No merge to `main` has been performed.
