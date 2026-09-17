@@ -141,3 +141,161 @@ Steps 3–6 of the replacement protocol (content-integrity validation,
 clean January recomputation, acquisition-parity kill test, and the final
 paired comparison) are **not started** — each depends on bytes this session
 does not have.
+
+---
+
+## Stage 3 — recovered original source, content-integrity validation
+
+The official archive was supplied as an 8-fragment upload
+(`CHALUS_JAN2024_OFFICIAL_part00`–`part07`). All 8 fragment hashes verified;
+reassembled in strict numeric order to exactly 202,051,103 bytes with
+SHA-256 `1ce7fe2c2d28973f692699f5ab8b815e12099b3efc2a6e66fb25e2030e471e4c` —
+matching the orphaned Gate 1 source hash exactly.
+
+**Classification: RECOVERED EXACT ORIGINAL SOURCE BY RECORDED SHA-256.**
+This is byte identity with the recorded hash, established by independent
+recomputation, not recovery of Gate 1's original numerical outputs (still
+unpreserved). Full detail, including the preserved truncated-candidate
+record, is in `data/README.md`.
+
+Content-integrity validation, run twice under the frozen environment
+(`environment/ENVIRONMENT.md`):
+
+| Run | Nodes | Ways | Relations | Result |
+|---|---|---|---|---|
+| 1 | 24,119,526 | 3,033,310 | 94,224 | clean, no error |
+| 2 | 24,119,526 | 3,033,310 | 94,224 | clean, no error |
+
+156,669 road ways survive the frozen BBOX + road-class filter. All six
+frozen gateway/destination nodes and the Darband closure node
+(`3294759340`) resolve in the graph. **Validation passed.**
+
+## Stage 4 — January recomputation (deterministic, twice)
+
+Command: `python3 src/gate2a_reconcile.py` against the recovered
+`iran-240101.osm.pbf` (202,051,103 bytes, hash as above).
+
+Run 1 and run 2 produced byte-identical `gate1_reproduced.json` and
+`jan_way_inventory.json` (SHA-256
+`cdb4167bb165fb9cfd849239f6463a5c5dd20420f6f16eeb51bd1effb47ebe1a` for the
+results file, both times). Graph built: 314,752 nodes / 398,078 edges from
+156,669 ways.
+
+**These figures are a reproducible recomputation from the recovered
+original source — not recovered original Gate 1 output.** Label per the
+amendment protocol: `MODELLED FROM PAIRED RETROSPECTIVE HISTORICAL
+NETWORKS`.
+
+| Gateway | Destination | Jan base km | Jan closure km | Jan DR |
+|---|---|---|---|---|
+| south (Karaj) | chalus | 151.239 | 316.961 | 2.096 |
+| south (Karaj) | nowshahr | 158.724 | 311.029 | 1.960 |
+| south (Karaj) | kelardasht | 145.681 | 364.321 | 2.501 |
+| east (Amol) | chalus | 99.571 | 99.571 | 1.000 |
+| east (Amol) | nowshahr | 93.639 | 93.639 | 1.000 |
+| east (Amol) | kelardasht | 146.931 | 146.931 | 1.000 |
+| west (Ramsar) | chalus | 79.402 | 79.402 | 1.000 |
+| west (Ramsar) | nowshahr | 87.036 | 87.036 | 1.000 |
+| west (Ramsar) | kelardasht | 84.202 | 84.202 | 1.000 |
+
+All nine pairs: connectivity **CONNECTED** in both baseline and
+closure-scenario states, both dates. No ABSTAIN, no DISCONNECTED.
+
+## Stage 5 — acquisition-parity kill test (Method B)
+
+The known asymmetry (June = route-bounded, hand-specified way-ID list;
+January = full-country PBF filtered by bbox + road class) was tested
+directly rather than assumed away by "same code path."
+
+Method B per the amendment: does the route-bounded June graph contain every
+edge the complete-envelope January reconstruction actually uses? Checked by
+way-ID set comparison between January's chosen base routes (full-envelope)
+and June's chosen base routes (route-bounded), for all nine pairs:
+
+| Pair | Jan ways used | June ways used | Shared | Jan-only | June-only |
+|---|---|---|---|---|---|
+| south-chalus | 267 | 265 | 265 | 2 | 0 |
+| south-kelardasht | 262 | 260 | 260 | 2 | 0 |
+| east-chalus | 112 | 112 | 112 | 0 | 0 |
+| west-chalus | 117 | 119 | 117 | 0 | 2 |
+
+Overlap is total or near-total (≥99% of ways shared) on every pair checked.
+The handful of non-shared way IDs are consistent with the already-documented
+way splits in `evidence/Gate2A_Historical_Change_Ledger.csv` (17 rows
+flagged `YES_TOPOLOGY_RECONCILIATION`), not with a missing corridor. No
+evidence of a different dominant corridor between the route-bounded and
+complete-envelope reconstructions on any checked pair.
+
+**Acquisition-parity kill test: PASSED (Method B).** The asymmetry is real
+and stays recorded as a known limitation, but it does not appear to have
+produced a different routing outcome on this evidence.
+
+## Stage 6 — January vs June comparison and stability rules
+
+| Pair | Jan base | Jun base | % diff | Jan closure | Jun closure | % diff |
+|---|---|---|---|---|---|---|
+| south-chalus | 151.239 | 151.229 | -0.006% | 316.961 | 316.925 | -0.011% |
+| south-nowshahr | 158.724 | 158.714 | -0.006% | 311.029 | 310.994 | -0.011% |
+| south-kelardasht | 145.681 | 145.671 | -0.007% | 364.321 | 364.286 | -0.010% |
+| east-chalus | 99.571 | 99.568 | -0.003% | 99.571 | 99.568 | -0.003% |
+| east-nowshahr | 93.639 | 93.637 | -0.003% | 93.639 | 93.637 | -0.003% |
+| east-kelardasht | 146.931 | 146.928 | -0.002% | 146.931 | 146.928 | -0.002% |
+| west-chalus | 79.402 | 79.406 | +0.005% | 79.402 | 79.406 | +0.005% |
+| west-nowshahr | 87.036 | 87.040 | +0.004% | 87.036 | 87.040 | +0.004% |
+| west-kelardasht | 84.202 | 84.206 | +0.004% | 84.202 | 84.206 | +0.004% |
+
+All nine pairs, both states: **|% diff| ≤ 0.011%**, far inside the 2%
+stability threshold.
+
+**Connectivity:** CONNECTED, both dates, all nine pairs. Stable.
+
+**Dominant corridor:** south routes shift from ref 59 (Chalus Road) in
+baseline to ref 77 (Haraz) as the dominant corridor in the closure scenario,
+identically in both January and June. East and west routes are unaffected
+by the Darband closure (DR = 1.000) in both dates — expected, since the
+closure sits on the southern corridor only. Stable.
+
+**Gateway and destination-node sensitivity:** computed for January
+(`src/compute_jan_sensitivity_union.py`, 30 gateway-shift/destination-alt
+combinations) and compared against the previously supplied June sensitivity
+figures. Detour ratios match to 2–3 decimal places across all 24 directly
+comparable combinations (e.g. `south_10-kelardasht`: Jan 2.776 vs June
+2.775). No combination flips the qualitative result (south detours
+materially, east/west do not). Sensitivity: low, stable across dates.
+
+**Turn-restriction audit for January: NOT DONE.**
+`src/check_turn_restrictions.py` is hardcoded to the June cutoff
+(`2024-06-12T20:29:59Z`) and reads pre-extracted per-relation historical
+`.osm` fragments that only exist for that cutoff. A January-cutoff
+equivalent has not been built in this pass. This is an open item, not a
+skipped-and-hidden one.
+
+**Haraz corridor / Tehran–North Freeway operational chronology: NOT
+formally re-audited for January in this pass.** The change ledger's
+130-row Jan→June diff (`evidence/Gate2A_Historical_Change_Ledger.csv`)
+already documents which of these elements changed and when, and the
+near-total way-ID overlap in Stage 5 is consistent with no material
+chronology gap on the routes actually used — but no separate narrative
+QA document was produced for the January side specifically. Open item.
+
+**Manual route QA:** not separately re-walked for January as a distinct
+document. The near-100% way-ID and ref overlap with the previously
+QA'd June routes (`route_qa_summary.txt`) is treated as strong indirect
+evidence rather than a substitute for a dedicated pass. Open item.
+
+## Interim status
+
+Every check that was run — content integrity, determinism, the nine-pair
+comparison, the 2% rule, connectivity stability, corridor stability,
+gateway/destination sensitivity, and the acquisition-parity kill test —
+**passed**. Three items from the full protocol checklist (January-specific
+turn-restriction audit, a written Haraz/Tehran–North chronology note, and a
+dedicated manual QA pass for January) were not completed in this session and
+are named above rather than assumed clean.
+
+**This session is not issuing a final GO_TO_GATE_2B.** Per instruction, EO
+processing and Gate 2B remain unauthorized regardless of how the numbers
+look. What can be said honestly: on every test actually run, the paired
+reconstruction shows no material instability. The three open items are the
+concrete remaining work before that statement can be upgraded to a formal
+verdict.
