@@ -1,0 +1,24 @@
+# Large or reconstructed geospatial inputs
+*.pbf
+*.osm
+*.osm.gz
+*.osc
+*.osc.gz
+
+# Candidate/generated outputs
+outputs/
+artifacts/
+*.png
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environment
+.env
+.DS_Store
