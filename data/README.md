@@ -18,7 +18,7 @@ The unavailable source formerly associated with Gate 1 had the orphaned hash
 `1ce7fe2c2d28973f692699f5ab8b815e12099b3efc2a6e66fb25e2030e471e4c`.
 The hashes differ and equivalence must not be claimed.
 
-### Integrity result — BLOCKING FINDING
+### Status: BLOCKED_CORRUPTED_INPUT (not a final NO-GO)
 
 Fragment- and whole-file SHA-256 verification **passed exactly** against the
 declared checksums (`PBF_PARTS_SHA256SUMS` and the whole-file hash above), and
@@ -38,20 +38,63 @@ error: RuntimeError: PBF error: unexpected EOF
 
 The parser consumes the entire node section successfully and then fails with
 a genuine mid-stream truncation — not a clean end-of-file after the last
-valid block. **No way or relation data is present in this file.** A road
-network cannot be built from nodes alone, so this candidate source cannot
-currently support any routing computation, despite passing every checksum
-supplied with it.
+valid block. **No way or relation data is present in this file.**
 
 This is recorded as a fact about the received artifact, not a reassembly
 error: the four fragments summed to the declared byte count exactly, and the
 reassembled file's hash matched the declared hash exactly, before parsing was
 attempted.
 
+**Root cause, as reported to this repository:** the transferred candidate
+(78,241,792 bytes) is a truncated copy of the official Geofabrik archive,
+which the official Geofabrik index reportedly lists at 202,051,103 bytes.
+That size figure has not yet been independently verified from this session
+(see "Official replacement source" below) — it is recorded here as reported,
+not as confirmed.
+
+This finding is preserved unchanged below the following section; it is not
+deleted or rewritten by the replacement attempt. It classifies as
+**BLOCKED_CORRUPTED_INPUT**, distinct from a scientific NO-GO on the paired
+reconstruction — the failure is in the transferred artifact, not in the
+underlying network or the closure representation.
+
+### Official replacement source — ACQUISITION BLOCKED (network egress policy)
+
+Attempted retrieval:
+
+- Target URL: `https://download.geofabrik.de/asia/iran-240101.osm.pbf`
+- Attempt timestamp: `2026-09-17T09:57:22Z`
+- Result: `curl: (56) CONNECT tunnel failed, response 403`
+- Session's egress-proxy status log records this explicitly:
+  `{"kind":"connect_rejected","detail":"gateway answered 403 to CONNECT
+  (policy denial or upstream failure)","host":"download.geofabrik.de:443"}`
+
+This session's outbound HTTPS is routed through a policy-enforcing egress
+proxy. `download.geofabrik.de` is not on this session's allowed-host list.
+The proxy's own operational guidance is explicit: a 403 from the proxy is an
+organizational policy denial, and the correct response is to **report the
+blocked host, not retry or route around it**. No bytes of the official
+replacement were received. Consequently none of the following can be
+reported yet, because they were never obtained: final URL after redirects,
+HTTP status from the origin server, exact byte count, SHA-256, PBF generator
+string, bounding box, replication timestamp, replication sequence, or
+replication base URL for the official file.
+
 **Consequence:** the January side of the Gate 2A-R paired reconstruction
-cannot proceed until a January source that parses to completion (nodes +
-ways, at minimum) is supplied. Checksum verification is necessary but was
-not sufficient here.
+remains blocked — not because the network or the closure representation are
+scientifically unstable, but because no complete January source has reached
+this session yet. This is an acquisition blocker, not a content blocker on
+the June side, and not evidence against the January candidate's plausible
+dating (the truncated file's own replication metadata, recorded above,
+independently matched Iran's real bounding box and a real Geofabrik
+replication feed).
+
+**What would unblock this:** either (a) this session's egress allowlist is
+extended to include `download.geofabrik.de` (a decision outside this
+session's control), or (b) the official 202,051,103-byte archive is supplied
+directly to this session the same way the earlier candidate fragments were —
+as an upload — so it can be hashed, parsed, and verified here without a live
+fetch.
 
 ## June 2024 network
 

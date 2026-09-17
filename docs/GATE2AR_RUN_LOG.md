@@ -1,8 +1,12 @@
-# Gate 2A-R run log — stage 1 (June-source provenance) and stage 2 (frozen environment)
+# Gate 2A-R run log
 
-Status: **paired reconstruction cannot proceed yet.** June side is
-reproducible and verified. January side is blocked by a source-data
-integrity failure, documented in `data/README.md`.
+Status: **BLOCKED_CORRUPTED_INPUT**, now compounded by
+**acquisition-blocked** on the replacement source. This is explicitly not a
+scientific NO-GO on Gate 2A-R — the underlying network/closure question is
+untested, not failed. June side is reproducible and verified. January side
+is blocked first by a source-data integrity failure (truncated candidate,
+preserved below unchanged) and now also by this session's network egress
+policy denying the replacement download. Full detail in `data/README.md`.
 
 ## Stage 1 — June-source provenance verification
 
@@ -90,26 +94,50 @@ produced.
 ## Interim conclusion
 
 Per `docs/GATE2AR_PROTOCOL_AMENDMENT.md` §"Mandatory source-provenance
-gate": *"If historical validity cannot be established, return NO-GO."* The
-January candidate's historical dating is plausible (Geofabrik replication
-metadata checks out — see `data/README.md`), but its **completeness** cannot
-be established — it contains no road (way) data at all. That is a harder
-failure than a provenance question: there is nothing to route on.
+gate": *"If historical validity cannot be established, return NO-GO."* On
+reflection this is the wrong bucket for what happened: the January
+candidate's historical dating is plausible (Geofabrik replication metadata
+checks out — see `data/README.md`), and the failure is not that historical
+validity was disproven — it's that the transferred file was incomplete.
+That is an acquisition/transfer defect, not a scientific finding about the
+network. Reclassified accordingly.
 
-**Verdict for this stage: NO-GO on the paired reconstruction, pending a
-January source that parses to completion.** This is not a verdict on the
-underlying research question — the June side remains internally consistent
-and reproducible, and the January provenance metadata is genuinely
-promising. What is missing is a January file that actually contains roads.
+**Status for this stage: `BLOCKED_CORRUPTED_INPUT`, now also
+acquisition-blocked on the replacement.** Not a verdict on the underlying
+research question. The June side remains internally consistent and
+reproducible. The January provenance metadata (from the truncated file's
+own header) is genuinely promising. What's missing is a complete January
+file actually reaching this session.
+
+### Replacement attempt
+
+`https://download.geofabrik.de/asia/iran-240101.osm.pbf` was requested per
+instruction. This session's outbound network policy returned a 403 at the
+egress proxy (`recentRelayFailures` records
+`connect_rejected` / `policy denial or upstream failure` for
+`download.geofabrik.de:443`, at `2026-09-17T09:57:22Z`). Per this session's
+own proxy documentation, a 403 is an organizational policy decision to be
+reported, not retried or routed around. No replacement bytes were obtained.
+Full detail in `data/README.md`.
 
 ## What would unblock this
 
-A January-dated OSM/PBF source (any acquisition method, any provider) that:
-1. parses to completion under `osmium` (nodes, ways, and ideally relations,
-   with no truncation), and
-2. covers the same bounding box needed by `src/gate2a_reconcile.py`
-   (`BBOX = (49.70, 35.35, 53.20, 37.15)`).
+Either:
+1. this session's egress allowlist is extended to include
+   `download.geofabrik.de` (not a decision this session can make), or
+2. the complete January archive (reportedly 202,051,103 bytes per the
+   official Geofabrik index, as stated in the amendment request — not yet
+   independently confirmed by this session) is supplied as an upload, the
+   same way the earlier fragments were.
 
-It does not need to match the orphaned `1ce7fe2c...` hash — per the
-amendment protocol, equivalence to the original Gate 1 source is not being
-claimed either way. It only needs to be a real, complete, dated network.
+Either way, the file must parse to completion under `osmium` (nodes, ways,
+and ideally relations, with no truncation) and cover the bounding box in
+`src/gate2a_reconcile.py` (`BBOX = (49.70, 35.35, 53.20, 37.15)`). It does
+not need to match the orphaned `1ce7fe2c...` hash — equivalence to the
+original Gate 1 source is not being claimed either way. It only needs to be
+a real, complete, dated network.
+
+Steps 3–6 of the replacement protocol (content-integrity validation,
+clean January recomputation, acquisition-parity kill test, and the final
+paired comparison) are **not started** — each depends on bytes this session
+does not have.
