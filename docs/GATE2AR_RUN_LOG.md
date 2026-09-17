@@ -1,12 +1,17 @@
 # Gate 2A-R run log
 
-Status: **BLOCKED_CORRUPTED_INPUT**, now compounded by
-**acquisition-blocked** on the replacement source. This is explicitly not a
-scientific NO-GO on Gate 2A-R — the underlying network/closure question is
-untested, not failed. June side is reproducible and verified. January side
-is blocked first by a source-data integrity failure (truncated candidate,
-preserved below unchanged) and now also by this session's network egress
-policy denying the replacement download. Full detail in `data/README.md`.
+**Current status: FINAL CLOSEOUT AUDIT IN PROGRESS.**
+
+**SUPERSEDED BLOCKER — RESOLVED BY RECOVERY OF EXACT ORIGINAL SOURCE.** The
+statuses below (`BLOCKED_CORRUPTED_INPUT`, acquisition-blocked on the
+replacement download) describe this run log's history and remain true as a
+record of what happened, in order — they are not the current state. The
+official January source was subsequently recovered by upload, verified
+byte-for-byte against the recorded original hash, and used to complete
+Stages 3-8 below. See `docs/GATE2AR_FINAL_REPORT.md` for the closeout
+report and verdict.
+
+Chronology preserved below, unedited, for audit purposes:
 
 ## Stage 1 — June-source provenance verification
 
@@ -299,3 +304,15 @@ look. What can be said honestly: on every test actually run, the paired
 reconstruction shows no material instability. The three open items are the
 concrete remaining work before that statement can be upgraded to a formal
 verdict.
+
+---
+
+## Closeout addendum
+
+The three items named above as open (January turn-restriction audit,
+Haraz/Tehran-North chronology, manual route QA) have since been completed
+and are reported in `docs/GATE2AR_FINAL_REPORT.md`, along with the
+full 18-route (9 pairs x 2 scenarios) parity test this log's earlier
+4-route check explicitly did not establish. That report supersedes this
+log's own interim verdict language above; this log remains the
+chronological record of how the source was lost, recovered, and validated.
