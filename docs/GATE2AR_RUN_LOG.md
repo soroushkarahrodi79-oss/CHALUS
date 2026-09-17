@@ -1,6 +1,7 @@
 # Gate 2A-R run log
 
-**Current status: FINAL CLOSEOUT AUDIT IN PROGRESS.**
+**Current status: GATE 2A-R CLOSED — NO-GO.
+EO BLOCKED. GATE 2B UNAUTHORIZED.**
 
 **SUPERSEDED BLOCKER — RESOLVED BY RECOVERY OF EXACT ORIGINAL SOURCE.** The
 statuses below (`BLOCKED_CORRUPTED_INPUT`, acquisition-blocked on the
