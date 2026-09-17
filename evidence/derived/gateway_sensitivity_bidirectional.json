@@ -1,0 +1,560 @@
+{
+  "january": {
+    "nodes": {
+      "south": {
+        "0": {
+          "node": 31086990,
+          "lat": 35.8358737,
+          "lon": 51.044856
+        },
+        "+5": {
+          "node": 441940518,
+          "lat": 35.8152501,
+          "lon": 51.0058039,
+          "cum_km": 5.002
+        },
+        "-5": {
+          "node": 3241439201,
+          "lat": 35.8702234,
+          "lon": 51.0507803,
+          "cum_km": 5.017
+        },
+        "-10": {
+          "node": 31087851,
+          "lat": 35.9089127,
+          "lon": 51.0434967,
+          "cum_km": 10.04
+        }
+      },
+      "east": {
+        "0": {
+          "node": 6208746864,
+          "lat": 36.4708863,
+          "lon": 52.3568561
+        },
+        "+5": {
+          "node": 4148974953,
+          "lat": 36.454548,
+          "lon": 52.3888427,
+          "cum_km": 5.027
+        },
+        "-5": {
+          "node": 1817458447,
+          "lat": 36.4377759,
+          "lon": 52.3473016,
+          "cum_km": 5.03
+        }
+      },
+      "west": {
+        "0": {
+          "node": 8595307908,
+          "lat": 36.9223588,
+          "lon": 50.6432076
+        },
+        "+5": {
+          "node": 6045870281,
+          "lat": 36.9226669,
+          "lon": 50.6576908,
+          "cum_km": 5.024
+        }
+      }
+    },
+    "results": {
+      "south0-chalus": {
+        "base_km": 151.23907749038304,
+        "closure_km": 316.96060419941244,
+        "dr": 2.0957586455760238,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south0-nowshahr": {
+        "base_km": 158.7237784819535,
+        "closure_km": 311.02924050438634,
+        "dr": 1.9595629809162436,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south0-kelardasht": {
+        "base_km": 145.6810546889118,
+        "closure_km": 364.3210964431384,
+        "dr": 2.500813144311125,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south+5-chalus": {
+        "base_km": 155.48661320277674,
+        "closure_km": 318.5284838466054,
+        "dr": 2.048591047714177,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south+5-nowshahr": {
+        "base_km": 162.9713141943472,
+        "closure_km": 312.5971201515793,
+        "dr": 1.9181113050288086,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south+5-kelardasht": {
+        "base_km": 149.92859040130526,
+        "closure_km": 365.88897609033137,
+        "dr": 2.4404216374673924,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-5-chalus": {
+        "base_km": 145.37925572736114,
+        "closure_km": 321.9773150705539,
+        "dr": 2.2147404281280556,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-5-nowshahr": {
+        "base_km": 152.8639567189316,
+        "closure_km": 316.0459513755278,
+        "dr": 2.0674981739262197,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-5-kelardasht": {
+        "base_km": 139.82123292588983,
+        "closure_km": 369.33780731427987,
+        "dr": 2.6415001469057415,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-10-chalus": {
+        "base_km": 140.3564542559004,
+        "closure_km": 327.00011654201455,
+        "dr": 2.32978325275888,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-10-nowshahr": {
+        "base_km": 147.84115524747085,
+        "closure_km": 321.06875284698845,
+        "dr": 2.171714312632044,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-10-kelardasht": {
+        "base_km": 134.79843145442925,
+        "closure_km": 374.3606087857405,
+        "dr": 2.7771881671508845,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "east0-chalus": {
+        "base_km": 99.57084928292728,
+        "closure_km": 99.57084928292728,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east0-nowshahr": {
+        "base_km": 93.63948558790113,
+        "closure_km": 93.63948558790113,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east0-kelardasht": {
+        "base_km": 146.93134152665107,
+        "closure_km": 146.93134152665107,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+5-chalus": {
+        "base_km": 102.26300219413895,
+        "closure_km": 102.26300219413895,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+5-nowshahr": {
+        "base_km": 96.3316384991128,
+        "closure_km": 96.3316384991128,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+5-kelardasht": {
+        "base_km": 149.62349443786263,
+        "closure_km": 149.62349443786263,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east-5-chalus": {
+        "base_km": 100.47632869786793,
+        "closure_km": 100.47632869786793,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east-5-nowshahr": {
+        "base_km": 94.54496500284178,
+        "closure_km": 94.54496500284178,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east-5-kelardasht": {
+        "base_km": 147.8368209415916,
+        "closure_km": 147.8368209415916,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west0-chalus": {
+        "base_km": 79.40185874298342,
+        "closure_km": 79.40185874298342,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west0-nowshahr": {
+        "base_km": 87.03646124398828,
+        "closure_km": 87.03646124398828,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west0-kelardasht": {
+        "base_km": 84.20224794739441,
+        "closure_km": 84.20224794739441,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+5-chalus": {
+        "base_km": 79.55951281794401,
+        "closure_km": 79.55951281794401,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+5-nowshahr": {
+        "base_km": 87.19411531894887,
+        "closure_km": 87.19411531894887,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+5-kelardasht": {
+        "base_km": 84.35990202235497,
+        "closure_km": 84.35990202235497,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      }
+    }
+  },
+  "june": {
+    "nodes": {
+      "south": {
+        "0": {
+          "node": 31086990,
+          "lat": 35.8358737,
+          "lon": 51.044856
+        },
+        "-5": {
+          "node": 3241439201,
+          "lat": 35.8702234,
+          "lon": 51.0507803,
+          "cum_km": 5.014
+        },
+        "-10": {
+          "node": 31087851,
+          "lat": 35.9089127,
+          "lon": 51.0434967,
+          "cum_km": 10.036
+        }
+      },
+      "east": {
+        "0": {
+          "node": 6208746864,
+          "lat": 36.4708863,
+          "lon": 52.3568561
+        },
+        "+5": {
+          "node": 2379121232,
+          "lat": 36.5040364,
+          "lon": 52.3417306,
+          "cum_km": 5.003
+        },
+        "+10": {
+          "node": 6392866971,
+          "lat": 36.5450482,
+          "lon": 52.3157061,
+          "cum_km": 10.142
+        }
+      },
+      "west": {
+        "0": {
+          "node": 8595307908,
+          "lat": 36.9223588,
+          "lon": 50.6432076
+        },
+        "+5": {
+          "node": 6043621423,
+          "lat": 36.903639,
+          "lon": 50.6866173,
+          "cum_km": 5.025
+        },
+        "+10": {
+          "node": 275368064,
+          "lat": 36.8837265,
+          "lon": 50.7370992,
+          "cum_km": 10.064
+        }
+      }
+    },
+    "results": {
+      "south0-chalus": {
+        "base_km": 151.22926788719852,
+        "closure_km": 316.9254221620298,
+        "dr": 2.095661948178071,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south0-nowshahr": {
+        "base_km": 158.71399243455946,
+        "closure_km": 310.99405843668694,
+        "dr": 1.9594621347888732,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south0-kelardasht": {
+        "base_km": 145.67121787359923,
+        "closure_km": 364.285914375439,
+        "dr": 2.500740501061332,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-5-chalus": {
+        "base_km": 145.37265030846578,
+        "closure_km": 321.9389288488334,
+        "dr": 2.2145770071998565,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-5-nowshahr": {
+        "base_km": 152.85737485582672,
+        "closure_km": 316.00756512349056,
+        "dr": 2.0673360733922403,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-5-kelardasht": {
+        "base_km": 139.8146002948664,
+        "closure_km": 369.29942106224263,
+        "dr": 2.641350905294561,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-10-chalus": {
+        "base_km": 140.34984883700503,
+        "closure_km": 326.96173032029407,
+        "dr": 2.329619397738079,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-10-nowshahr": {
+        "base_km": 147.83457338436597,
+        "closure_km": 321.0303665949512,
+        "dr": 2.171551344490174,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "south-10-kelardasht": {
+        "base_km": 134.79179882340583,
+        "closure_km": 374.32222253370327,
+        "dr": 2.7770400410199465,
+        "connectivity": "CONNECTED WITH DETOUR",
+        "dominant_ref_base": "59",
+        "dominant_ref_closure": "77"
+      },
+      "east0-chalus": {
+        "base_km": 99.56795059426763,
+        "closure_km": 99.56795059426763,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east0-nowshahr": {
+        "base_km": 93.63658686892471,
+        "closure_km": 93.63658686892471,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east0-kelardasht": {
+        "base_km": 146.92844280767463,
+        "closure_km": 146.92844280767463,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+5-chalus": {
+        "base_km": 94.58525781758775,
+        "closure_km": 94.58525781758775,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+5-nowshahr": {
+        "base_km": 88.65389409224483,
+        "closure_km": 88.65389409224483,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+5-kelardasht": {
+        "base_km": 141.94575003099465,
+        "closure_km": 141.94575003099465,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+10-chalus": {
+        "base_km": 89.44659671450555,
+        "closure_km": 89.44659671450555,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+10-nowshahr": {
+        "base_km": 83.51523298916263,
+        "closure_km": 83.51523298916263,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "east+10-kelardasht": {
+        "base_km": 136.80708892791267,
+        "closure_km": 136.80708892791267,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west0-chalus": {
+        "base_km": 79.405517233069,
+        "closure_km": 79.405517233069,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west0-nowshahr": {
+        "base_km": 87.04014328986437,
+        "closure_km": 87.04014328986437,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west0-kelardasht": {
+        "base_km": 84.20588779106447,
+        "closure_km": 84.20588779106447,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+5-chalus": {
+        "base_km": 74.38027398561792,
+        "closure_km": 74.38027398561792,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+5-nowshahr": {
+        "base_km": 82.01490004241329,
+        "closure_km": 82.01490004241329,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+5-kelardasht": {
+        "base_km": 79.18064454361348,
+        "closure_km": 79.18064454361348,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+10-chalus": {
+        "base_km": 69.34160705491152,
+        "closure_km": 69.34160705491152,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+10-nowshahr": {
+        "base_km": 76.97623311170689,
+        "closure_km": 76.97623311170689,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      },
+      "west+10-kelardasht": {
+        "base_km": 74.14197761290703,
+        "closure_km": 74.14197761290703,
+        "dr": 1.0,
+        "connectivity": "CONNECTED",
+        "dominant_ref_base": "22",
+        "dominant_ref_closure": "22"
+      }
+    }
+  }
+}

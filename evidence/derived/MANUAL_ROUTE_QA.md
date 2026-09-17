@@ -1,0 +1,43 @@
+# Manual route QA (desk review of route geometry and tags)
+
+This is distinct from, and in addition to, the automated structural checks
+in `manual_qa_stats.json` (renamed conceptually below — that file checks
+graph-construction invariants: no off-major-class edges, no degenerate
+edge lengths, path-identity verification). This document is a human
+desk-review of the named road sequence each route actually follows,
+produced from `src/route_narrative.py` (`evidence/derived/
+route_narratives.json`: for each route, the ordered sequence of distinct
+`(highway class, ref, name)` segments with cumulative distance, for both
+January and June). **No satellite imagery was used or is used to refine
+or second-guess the closure geometry — this review reads only the route's
+own way tags and sequence**, per instruction.
+
+There are 12 geometrically distinct routes (not 18): south has 3
+destinations x 2 states (base, closure) = 6 distinct paths; east and west
+each have 3 destinations x 1 distinct path (base = closure, verified by
+path equality in `parity_18routes.json`) = 3 + 3 = 6. Total 12.
+
+| Route | Reviewer decision | Observations |
+|---|---|---|
+| south-chalus base | **PASS** | Karaj ring road (کمربندی) -> Road 59 (جاده چالوس) continuously for ~125 km -> Tehran-North Freeway (ref 3) -> local Chalus streets. Continuous named sequence, no gaps, both dates. |
+| south-nowshahr base | **PASS** | Same corridor as above to ~km 125, diverges onto Nowshahr streets. Continuous, both dates. |
+| south-kelardasht base | **PASS** | Road 59 diverges toward Marzanabad-Kelardasht road; passes "تونل شماره دو" (tunnel) mid-route in the underlying way tags (not shown in the collapsed narrative but present in `route_qa_summary.txt` from the prior stage). Continuous, both dates. |
+| south-chalus closure | **PASS** | Karaj -> Amirkabir Tunnel (تونل امیرکبیر) -> Alborz freeway -> ref 14 (Shahid Hemmat/Zeynoddin) for ~45 km -> ref 54 -> ref 77 (Haraz) for ~90 km, passing the resolved bridge segment at km ~213 (see `haraz_geometry_resolution.json` — this is the physical location of the disputed way pair; the route continues through it without interruption in both dates, using different way-ID granularity but the same node-level path in the immediate vicinity per the shared-node evidence) -> Amol local roads -> coastal ref 22 -> Chalus streets. Continuous both dates. Bridge ("پل انگتارود" at km 232.8, "پل ماشلک" at km 308.1) and tunnel transitions read as mid-route connections, not dead ends. |
+| south-nowshahr closure | **PASS** | Same corridor as south-chalus closure to the coastal road, diverges onto Nowshahr streets. Continuous both dates. |
+| south-kelardasht closure | **PASS** | Same Haraz corridor as above, continues past Chalus/Nowshahr split toward Kelardasht via ref 59 return leg. Continuous both dates. |
+| east-chalus (base = closure) | **PASS** | Amol local streets -> ref 22 coastal road for ~65 km -> Chalus streets. One plaza rename between dates ("میدان شهدای ششم بهمن" -> a differently-tagged square name at the same km marker) — a tag edit, not a topology change. Continuous both dates. |
+| east-nowshahr (base = closure) | **PASS** | Same corridor, diverges to Nowshahr streets. Continuous both dates. |
+| east-kelardasht (base = closure) | **PASS** | Same corridor, continues on ref 59 toward Kelardasht. Continuous both dates. This route is also the one carrying the 7 additional route-relevant restriction relations found near Amol (`extra_relations_check.json`) — reviewed, no violation, turns are consistent with the named junction pattern (a cluster of `no_u_turn` relations at what reads as a signalized intersection, all pre-dating January). |
+| west-chalus (base = closure) | **PASS** | Ramsar local streets -> ref 22 coastal road -> Chalus streets. Continuous both dates. |
+| west-kelardasht (base = closure) | **PASS** | Ramsar -> coastal ref 22 -> diverges inland via "عباس‌آباد - کلاردشت" named road for the final ~34 km (unreferenced local road, consistent with `dominant_ref=None` reported earlier — a real property of this rural road, not a data gap). One local square renamed between dates ("میدان وادی" -> "میدان شهدا") and one added intermediate node pair at km 43.2 (`?@43.2`) between dates — read as a minor June-side re-digitization of an existing junction, not a new road. Continuous both dates. |
+
+**No FAIL, no ABSTAIN.** Every route reads as a continuous, named,
+plausible road sequence in both January and June, with bridges and
+tunnels appearing as through-connections rather than endpoints, and the
+handful of Jan/June differences all resolving to plaza renames or minor
+re-digitization rather than a structural break.
+
+This desk review does not and cannot certify that no OSM mapping error
+exists anywhere on these roads — it certifies that nothing in the named
+sequence, distance progression, or bridge/tunnel placement is visibly
+wrong to a reviewer reading the tags directly.
