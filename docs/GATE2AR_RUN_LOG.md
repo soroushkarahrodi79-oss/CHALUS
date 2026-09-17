@@ -316,3 +316,21 @@ full 18-route (9 pairs x 2 scenarios) parity test this log's earlier
 4-route check explicitly did not establish. That report supersedes this
 log's own interim verdict language above; this log remains the
 chronological record of how the source was lost, recovered, and validated.
+
+---
+
+## Verdict retraction and correction
+
+The GO verdict issued in commit `d7c07ce` is **retracted**. It was issued
+while section C (Haraz topology) explicitly stated the correspondence was
+unresolved, and then waived the amendment's own pre-registered rule
+("any unresolved Haraz topology... triggers NO-GO") on the grounds that
+the distance effect was small. That is exactly the failure mode the
+protocol exists to prevent: weakening a kill test after seeing a
+favorable result.
+
+**Status: MODIFY — FINAL VERDICT UNDER CORRECTION**, until the corrected
+closeout report (`docs/GATE2AR_FINAL_REPORT.md`, superseding the retracted
+version) either resolves the item with real evidence or the automatic
+NO-GO applies. See that report for the resolution and the corrected
+verdict.
