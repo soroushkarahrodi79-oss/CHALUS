@@ -334,3 +334,25 @@ closeout report (`docs/GATE2AR_FINAL_REPORT.md`, superseding the retracted
 version) either resolves the item with real evidence or the automatic
 NO-GO applies. See that report for the resolution and the corrected
 verdict.
+
+---
+
+## FINAL STATUS: GATE 2A-R CLOSED — NO-GO
+
+The GO verdict in commit `5ff8820` is withdrawn. Its Haraz-resolution claim
+overstated what the committed evidence actually shows: one shared OSM node
+establishes network contact between the disputed January ways and their
+candidate June successor, not proof of full geometric absorption. No new
+data was acquired and no further geometric analysis was performed to try
+to close this gap — the frozen rule ("any unresolved Haraz topology...
+triggers NO-GO") applies as written, independent of how small the
+measured distance effect is.
+
+**GATE 2A-R CLOSED — NO-GO. EO BLOCKED. GATE 2B UNAUTHORIZED.**
+
+See `docs/GATE2AR_FINAL_REPORT.md` for the full corrected closeout report,
+including which findings are preserved as supported (source recovery,
+determinism, the 0.011% max January/June distance difference, corridor
+labels as computed, gateway/destination sensitivity) versus which items
+remain unresolved and drove this verdict (Haraz segment correspondence,
+June restriction completeness, independent motorway operational status).
