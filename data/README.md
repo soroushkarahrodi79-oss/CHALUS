@@ -96,6 +96,72 @@ directly to this session the same way the earlier candidate fragments were —
 as an upload — so it can be hashed, parsed, and verified here without a live
 fetch.
 
+### RECOVERED EXACT ORIGINAL SOURCE BY RECORDED SHA-256
+
+Option (b) happened. An 8-fragment upload
+(`CHALUS_JAN2024_OFFICIAL_part00`–`part07`, plus a manifest) was supplied
+directly to this session. Verified independently, not taken from the
+manifest's own claims:
+
+- All 8 fragment SHA-256 hashes matched the manifest exactly.
+- Reassembled in strict numeric order (`part00`…`part07`).
+- Reassembled file size: `202051103` bytes — matches the declared official
+  size exactly.
+- Reassembled file SHA-256:
+  `1ce7fe2c2d28973f692699f5ab8b815e12099b3efc2a6e66fb25e2030e471e4c`
+  — **matches the orphaned hash previously recorded for the unavailable
+  original Gate 1 source, exactly.**
+
+This is byte-identity with the recorded historical hash, established by
+independent recomputation in this session, not by trusting the manifest.
+Classification: **RECOVERED EXACT ORIGINAL SOURCE BY RECORDED SHA-256.**
+
+What this does and does not establish, stated precisely: it establishes that
+the bytes now in hand are the same bytes whose hash was recorded against
+Gate 1's January source. It does **not** recover the original Gate 1
+numerical outputs (distances, routes, verdict) — those were never preserved
+anywhere this session has reached, and are not reconstructed by having the
+input file. Any January routing figures produced from this file in this
+repository are a **fresh, reproducible recomputation from the recovered
+original source**, not recovered original results. See
+`docs/GATE2AR_RUN_LOG.md`.
+
+The prior truncated-artifact record above is preserved unchanged as
+`BLOCKED_CORRUPTED_INPUT` — it is a different, invalid, 78,241,792-byte file
+and remains part of the evidence trail, not superseded or deleted.
+
+### Content-integrity validation (mandatory, before any routing)
+
+Header metadata (identical to the truncated candidate's, as expected since
+both derive from the same underlying replication state):
+
+- Bounding box: 44.023–63.354°E, 24.039–39.790°N (Iran)
+- Generator: `osmium/1.14.0`
+- Replication timestamp: `2024-01-01T21:21:15Z`
+- Replication sequence: `3926`
+- Replication base URL: `http://download.geofabrik.de/asia/iran-updates`
+
+Full-file parse, run twice with `osmium` 4.3.1 under the frozen environment:
+
+| Run | Nodes | Ways | Relations | Result |
+|---|---|---|---|---|
+| 1 | 24,119,526 | 3,033,310 | 94,224 | Completed cleanly, no error |
+| 2 | 24,119,526 | 3,033,310 | 94,224 | Completed cleanly, no error |
+
+Identical counts both times; no `unexpected EOF`; no structural error. This
+is a real, complete OSM dataset, unlike the earlier candidate.
+
+Additional required checks, all confirmed by direct inspection of the parsed
+graph (not assumed):
+- Road ways surviving the frozen BBOX `(49.70, 35.35, 53.20, 37.15)` and
+  major-road-class filter: 156,669 (`ways > 0`, satisfied by a wide margin).
+- All six frozen gateway/destination nodes (`31086990`, `6208746864`,
+  `8595307908`, `1375231380`, `4998048119`, `3323917713`) resolved to real
+  coordinates in the graph — none missing.
+- Darband closure node `3294759340` present in the graph.
+
+**Status: content-integrity validation PASSED.** Proceeding to routing.
+
 ## June 2024 network
 
 - Local filename: `june_reconciled_partial_CANDIDATE.osm` (route-bounded
