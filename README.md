@@ -59,4 +59,8 @@ standard (Haraz segment correspondence, restriction completeness,
 independent motorway operational status) was not fully met.
 
 Earth-observation processing remains unauthorized. Gate 2B remains
-unauthorized. No merge to `main` has been performed.
+unauthorized. The research branch was merged to `main` (PR #1) only to
+consolidate the complete audit trail on the default branch; this merge is
+a repository-housekeeping action, not a scientific event — it does not
+reopen Gate 2A-R, does not authorize Gate 2B or EO processing, and does
+not alter the NO-GO verdict.
