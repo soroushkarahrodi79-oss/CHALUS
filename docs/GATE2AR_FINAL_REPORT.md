@@ -1,6 +1,9 @@
 # GATE 2A-R — FINAL CLOSEOUT REPORT (NO-GO)
 
-Branch: `research/gate2ar-paired-reconstruction`. Not merged to `main`.
+Branch: `research/gate2ar-paired-reconstruction`, subsequently merged to
+`main` via PR #1 for archival consolidation of the audit trail only. This
+merge does not reopen Gate 2A-R, authorize Gate 2B, or alter the verdict
+below.
 
 **GATE 2A-R CLOSED — NO-GO. EO BLOCKED. GATE 2B UNAUTHORIZED.**
 
@@ -299,7 +302,10 @@ exists to make.
 **This does not authorize:**
 - `GO_TO_GATE_2B` — remains unauthorized.
 - Sentinel-1/2 or any EO processing — remains blocked.
-- a merge to `main`.
+- any further research phase. (The branch was subsequently merged to
+  `main` via PR #1 purely to consolidate the audit trail on the default
+  branch — a housekeeping action, not a reauthorization of anything
+  listed above.)
 
 No further computation, data acquisition, or rescue analysis was
 performed to close the Haraz or restriction-completeness gaps in
